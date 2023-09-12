@@ -1,0 +1,162 @@
+$desktop: 1199px;
+$tablet: 768px;
+
+.portfolio {
+  overflow: hidden;
+}
+
+.sliderWrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet) {
+    width: 768px;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1170px;
+    margin-bottom: 86px;
+  }
+}
+
+.title {
+  color: var(--dark-text-color);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet) {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop) {
+  }
+}
+
+.blackAccent {
+  width: 179px;
+  height: 100%;
+  background-color: var(--dark-background-color);
+  position: absolute;
+  bottom: -30px;
+  right: -60px;
+
+  @media (min-width: $tablet) {
+    bottom: -56px;
+    right: -120px;
+    width: 300px;
+    height: 350px;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: -86px;
+    right: -120px;
+    width: 512px;
+    height: 505px;
+  }
+}
+
+.porfolioWrapper {
+  position: relative;
+}
+
+// .portfolio {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+// }
+
+$desktop: 1199px;
+$tablet: 768px;
+
+.swiper {
+  width: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media (min-width: $tablet) {
+    width: 350px;
+    height: 250px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+    height: 356px;
+  }
+}
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.imgArrow {
+  width: 32px;
+  height: 32px;
+  background-color: var(--dark-background-color);
+}
+
+// .imageText {
+//   position: absolute;
+//   top: 30px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   font-size: 32px;
+//   color: var(--dark-background-color);
+//   font-weight: 700;
+//   letter-spacing: 1.6px;
+// }
+
+.aboutButton {
+  $desktop: 1199px;
+  $tablet: 768px;
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  width: 180px;
+  font-weight: 400;
+  height: 50px;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  background-color: var(--dark-background-color);
+  color: var(--light-text-color);
+  text-align: center;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+  }
+}
+
+.prevBtn {
+  left: 10px;
+}
+
+.nextBtn {
+  right: 10px;
+}

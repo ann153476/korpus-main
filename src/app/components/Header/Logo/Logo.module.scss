@@ -1,0 +1,30 @@
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  @media screen and (min-width: 1024px) {
+    gap: 15px;
+  }
+}
+
+.logo {
+  @media screen and (min-width: 1024px) {
+    width: 35px;
+    height: 40px;
+  }
+}
+
+.logoText {
+  color: var(--primary-accent-color);
+  text-transform: uppercase;
+  font-family: Bruno Ace;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 21px;
+  }
+}

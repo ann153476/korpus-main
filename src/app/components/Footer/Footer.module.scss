@@ -1,0 +1,128 @@
+.footer {
+  $tablet: 768px;
+
+  background-color: var(--dark-background-color);
+  width: 100%;
+  padding-top: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 56px;
+  }
+}
+
+.title {
+  $tablet: 768px;
+  color: var(--primary-accent-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  font-family: Open Sans;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 16px;
+  }
+}
+
+.itemLink {
+  $tablet: 768px;
+  color: var(--light-text-color);
+  text-transform: capitalize;
+
+  &:hover {
+    color: var(--primary-accent-color);
+  }
+}
+
+.item {
+  $tablet: 768px;
+
+  color: var(--light-text-color);
+  margin-bottom: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  &:hover {
+    color: var(--primary-accent-color);
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 16px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  $tablet: 768px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: start;
+  }
+}
+
+.logo {
+  display: none;
+  $tablet: 768px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+  }
+}
+
+.catalogList {
+  max-height: 148px;
+
+  $tablet: 768px;
+
+  @media screen and (min-width: $tablet) {
+    max-height: 136px;
+  }
+
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0.3em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--primary-accent-color);
+    border-radius: 5px;
+  }
+}
+
+.root {
+  $tablet: 768px;
+
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid var(--primary-accent-color);
+  margin-top: 40px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 56px;
+  }
+}
+
+.rootText {
+  color: var(--light-text-color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}

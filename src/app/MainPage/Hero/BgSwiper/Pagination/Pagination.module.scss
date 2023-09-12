@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+
+  @media screen and (min-width: 1199px) {
+    gap: 8px;
+  }
+}
+
+.bullet-wrapper {
+  padding: 2px;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 1199px) {
+    padding: 4px;
+  }
+}
+
+.bullet {
+  display: block;
+  width: 4px;
+  height: 4px;
+
+  background-color: var(--light-text-color);
+
+  &:global(.active) {
+    background-color: var(--primary-accent-color);
+  }
+
+  @media screen and (min-width: 1199px) {
+    width: 8px;
+    height: 8px;
+  }
+}

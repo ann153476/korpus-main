@@ -1,0 +1,113 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: transparent;
+}
+
+.inner {
+  display: flex;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid var(--white-color);
+  color: var(--white-color);
+  background-color: transparent;
+  font-family: Open Sans;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+
+  &:focus-within {
+    border-bottom: 1px solid var();
+  }
+}
+
+.ratingWrapper {
+  width: 102px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 24px;
+  position: relative;
+
+  &::before {
+    content: '★★★★★';
+    display: block;
+  }
+}
+
+.ratingItems {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.ratingItem {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+
+  &:checked,
+  &:checked ~ .ratingLabel {
+    color: #ffb400;
+  }
+}
+
+.ratingLabel {
+  flex: 0 0 20%;
+  height: 100%;
+  color: var(--primary-grey-color);
+  cursor: pointer;
+
+  &::before {
+    content: '★';
+    display: block;
+    transition: color 300ms easy;
+  }
+
+  &:hover,
+  &:hover ~ .ratingLabel,
+  &:checked ~ .ratingLabel:hover {
+    color: #ffb400;
+  }
+}
+
+.sendBtn {
+  width: 343px;
+  height: 64px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  border: 1.5px solid var(--white-color);
+  color: var(--white-color);
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  scale: 1;
+  transition: scale 300ms ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    scale: 1.1;
+    color: var(--primary-accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 16px;
+  }
+}

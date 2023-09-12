@@ -1,0 +1,81 @@
+$desktop: 1199px;
+$tablet: 768px;
+
+.wrapper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.buttonList {
+  display: flex;
+}
+
+.itemPage {
+  color: var(--dark-background-color);
+  background-color: transparent;
+  width: 26px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  cursor: pointer;
+  border: none;
+
+  @media screen and (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.currentPage {
+  color: var(--light-text-color);
+  background-color: var(--dark-background-color);
+  cursor: pointer;
+  border: none;
+}
+
+.prevPage {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  width: 26px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+
+  @media screen and (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.nextPage {
+  background-color: transparent;
+  width: 26px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  cursor: pointer;
+  border: none;
+
+  @media screen and (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// .item {
+//   $tablet: 768px;
+
+//   width: 26px;
+//   height: 26px;
+
+//   @media screen and (min-width: $tablet) {
+//     width: 40px;
+//     height: 40px;
+//   }
+// }

@@ -1,0 +1,171 @@
+.aboutUs {
+  padding-top: 60px;
+  padding-bottom: 109px;
+  color: var(--light-text-color);
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 90px;
+    padding-bottom: 72px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 124px;
+  }
+}
+
+.aboutUsContainer {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.wrapper {
+  min-width: 359px;
+  height: 738px;
+  padding-top: 400px;
+  padding-bottom: 91px;
+  background-color: var(--dark-background-color);
+  position: relative;
+  top: 0;
+  right: -16px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 448px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 640px;
+    height: 540px;
+    padding-top: 48px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 941px;
+    height: 812px;
+    padding-top: 80px;
+  }
+}
+
+.inner {
+  height: 247px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    height: 360px;
+    padding-right: 36px;
+    padding-left: 284px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 36px;
+    padding-left: 456px;
+  }
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 36px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+}
+
+.text {
+  letter-spacing: 0.8;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.border {
+  width: 326px;
+  height: 328px;
+  background-color: transparent;
+  border-top: 1px solid var(--primary-accent-color);
+  border-right: 1px solid var(--primary-accent-color);
+  border-bottom: 1px solid var(--primary-accent-color);
+  position: absolute;
+  top: 25px;
+  left: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    border-top: 2px solid var(--primary-accent-color);
+    border-right: 2px solid var(--primary-accent-color);
+    border-bottom: 2px solid var(--primary-accent-color);
+    top: 60px;
+    left: 128px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-top: 5px solid var(--primary-accent-color);
+    border-right: 5px solid var(--primary-accent-color);
+    border-bottom: 5px solid var(--primary-accent-color);
+    width: 375px;
+    height: 580px;
+    top: 89px;
+    left: 258px;
+  }
+}
+
+.leftImage {
+  width: 334px;
+  height: 324px;
+  position: absolute;
+  top: 48px;
+  left: 0;
+
+  @media screen and (min-width: 768px) {
+    top: 80px;
+    left: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 568px;
+    height: 580px;
+    top: 116px;
+    left: 30px;
+  }
+}
+
+.rightImage {
+  width: 262px;
+  height: 219px;
+  position: absolute;
+  bottom: -109px;
+
+  @media screen and (max-width: 767px) {
+    left: 205px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 40%;
+    max-width: 600px;
+    height: auto;
+    right: 12px;
+    bottom: -72px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: -82px;
+    bottom: -124px;
+  }
+}

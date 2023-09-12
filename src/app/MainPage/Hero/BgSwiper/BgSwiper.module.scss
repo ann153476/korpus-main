@@ -1,0 +1,22 @@
+.swiper {
+  position: relative;
+
+  max-width: 1440px;
+  margin: auto;
+
+  transition: background-image 0.5s ease-in-out;
+}
+
+.pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 16px;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+
+  @media screen and (min-width: 1199px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}

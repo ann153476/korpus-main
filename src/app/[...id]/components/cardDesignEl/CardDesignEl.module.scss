@@ -1,0 +1,231 @@
+$desktop: 1199px;
+$tablet: 768px;
+
+.design {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 60px;
+  // @media (min-width: $tablet) {
+  //   margin-bottom: 100px;
+  // }
+
+  // @media (min-width: $desktop) {
+  //   margin-bottom: 150px;
+  // }
+}
+
+.designElLast {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    height: 430px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: $desktop) {
+    height: 600px;
+    margin-bottom: 30px;
+  }
+}
+.designElFirst {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    height: 430px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: $desktop) {
+    height: 600px;
+    margin-bottom: 30px;
+  }
+}
+.designElSecond {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    height: 430px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: $desktop) {
+    height: 600px;
+    margin-bottom: 30px;
+  }
+}
+.designPink {
+  background-color: var(--primary-accent-color);
+  margin-left: 16px;
+  padding: 40px 16px;
+  margin-top: 250px;
+
+  @media (min-width: $tablet) {
+    width: 600px;
+    height: 300px;
+    padding: 50px 20px 35px 50px;
+    margin-left: auto;
+    margin-top: 60px;
+  }
+  @media (min-width: $desktop) {
+    width: 700px;
+    height: 350px;
+    padding: 60px 40px 68px 100px;
+    margin-left: auto;
+    margin-top: 60px;
+  }
+}
+
+.designPinkLast {
+  background-color: var(--primary-accent-color);
+  margin-left: 16px;
+  padding: 40px 16px;
+  margin-top: 250px;
+
+  @media (min-width: $tablet) {
+    width: 600px;
+    height: 300px;
+    padding: 50px 20px 35px 50px;
+    margin-left: auto;
+    margin-top: 60px;
+  }
+  @media (min-width: $desktop) {
+    width: 700px;
+    height: 350px;
+    padding: 60px 40px 68px 100px;
+    margin-left: auto;
+    margin-top: 60px;
+  }
+}
+.designGrey {
+  background-color: var(--grey-background-color);
+  margin-right: 16px;
+  padding: 40px 16px;
+  margin-top: 250px;
+  @media (min-width: $tablet) {
+    width: 600px;
+    height: 300px;
+    padding: 50px 20px 35px 50px;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+  @media (min-width: $desktop) {
+    width: 700px;
+    height: 350px;
+    padding: 60px 40px 68px 100px;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+}
+
+.title {
+  font-size: 20px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+  }
+}
+.text {
+  border-top: 1px solid var(--dark-text-color);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  gap: 22px;
+  font-size: 16px;
+  color: var(--dark-text-color);
+  font-weight: 400;
+
+  letter-spacing: 0.8px;
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    padding-top: 24px;
+  }
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 375px;
+  @media (min-width: $tablet) {
+    width: 655px;
+    height: 430px;
+    top: 0;
+    left: -100px;
+  }
+  @media (min-width: $desktop) {
+    width: 805px;
+    height: 600px;
+    top: 0;
+    left: -150px;
+  }
+}
+
+.imgLast {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 375px;
+  @media (min-width: $tablet) {
+    width: 655px;
+    height: 430px;
+    top: 0;
+    left: -100px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 805px;
+    height: 600px;
+    top: 0;
+    left: -150px;
+  }
+}
+
+.imgGrey {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  right: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 375px;
+  @media (min-width: $tablet) {
+    width: 655px;
+    height: 430px;
+    top: 0;
+    right: -100px;
+  }
+  @media (min-width: $desktop) {
+    width: 805px;
+    height: 600px;
+    top: 0;
+    right: -150px;
+  }
+}

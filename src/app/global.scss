@@ -1,0 +1,271 @@
+:root {
+  // Colors
+  --dark-background-color: #263238;
+  --light-background-color: #fdfdfd;
+  --grey-background-color: #cfd8dc;
+  --dark-text-color: #263238;
+  --light-text-color: #eceff1;
+  --white-color: #ffffff;
+  --primary-grey-color: #b0bec5;
+  --secondary-grey-color: #78909c;
+  --primary-accent-color: #ffe0b2;
+  --secondary-accent-color: #d81b60;
+}
+
+@font-face {
+  font-family: 'Bruno Ace';
+  src: url('../../public/fonts/Bruno_Ace/BrunoAce-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf')
+    format('truetype');
+}
+
+body,
+html,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: Open Sans;
+  color: var(--dark-text-color);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* сss для секції Promotions*/
+.swiper-button-next,
+.swiper-button-prev {
+  text-rendering: auto;
+}
+div.swiper-button-next,
+div.swiper-button-prev {
+  width: 24px !important;
+  height: 24px !important;
+  background: #263238;
+  backdrop-filter: blur(2px);
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next {
+  right: 0 !important;
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+}
+
+div.swiper-button-next::after {
+  content: 'next';
+}
+
+div.swiper-button-prev::after {
+  content: 'prev';
+}
+
+div.swiper-button-next::after,
+div.swiper-button-prev::after {
+  color: #fdfdfd !important;
+  font-size: 10px !important;
+
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: normal;
+  line-height: 1;
+}
+
+/* Для екранів більше 768px */
+@media (min-width: 768px) {
+  div.swiper-button-next,
+  div.swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  div.swiper-button-next::after,
+  div.swiper-button-prev::after {
+    font-size: 20px !important;
+  }
+}

@@ -1,0 +1,80 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(7px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+}
+
+.modalWrapper {
+  width: 100%;
+  min-height: 562px;
+  padding: 60px 16px 100px;
+  color: var(--white-color);
+  background-color: var(--dark-background-color);
+  position: absolute;
+  top: 136px;
+  left: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 480px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 672px;
+    min-height: 498px;
+    padding: 60px 100px;
+  }
+}
+
+.closeBtn {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  color: var(--white-color);
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  cursor: pointer;
+  transition: rotate 300ms ease;
+
+  &:hover,
+  &:focus {
+    rotate: 360deg;
+  }
+
+  &:hover .closeIcon,
+  &:focus .closeIcon {
+    fill: var(--primary-accent-color);
+  }
+}
+
+.closeIcon {
+  fill: var(--white-color);
+}
+
+.text {
+  margin-bottom: 60px;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.9;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    width: 168px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}

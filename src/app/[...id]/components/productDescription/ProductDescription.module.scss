@@ -1,0 +1,180 @@
+$tablet: 768px;
+$desktop: 1199px;
+
+.productDescriptionLinks {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  border-bottom: solid 1px var(--dark-background-color);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+}
+
+.link {
+  padding: 12px;
+  color: var(--dark-background-color);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    padding: 12px 24px;
+  }
+}
+
+.active {
+  padding: 12px;
+  background-color: var(--dark-background-color);
+  color: var(--light-background-color);
+
+  @media screen and (min-width: $desktop) {
+    padding: 12px 24px;
+  }
+}
+
+.productDesc {
+  margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 16px;
+    margin-bottom: 44px;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  color: var(--dark-background-color);
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin-bottom: 40px;
+  }
+}
+
+.productDescText {
+  color: var(--dark-background-color);
+  padding-right: 4px;
+  height: 400px;
+  overflow-y: auto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--dark-background-color);
+    border-radius: 5px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    width: 328px;
+    font-weight: 400;
+    padding-right: 8px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 554px;
+    height: 476px;
+    padding-right: 8px;
+  }
+}
+
+.imgWrapped {
+  @media screen and (min-width: $tablet) {
+    margin-left: 30px;
+  }
+}
+
+.productDescrImg {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 350px;
+    height: 310px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 570px;
+    height: 480px;
+  }
+}
+
+.productCharacteristicsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.productCharacteristicsItemTitle {
+  color: var(--secondary-grey-color);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  min-width: 140px;
+  width: 170px;
+  word-wrap: break-word;
+  margin-right: 15px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    min-width: 120px;
+    width: 160px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    // min-width: 170px;
+    width: 200px;
+  }
+}
+
+.productCharacteristicsItem {
+  display: flex;
+}
+
+.productCharacteristicsValue {
+  color: var(--dark-background-color);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  min-width: 150px;
+  max-width: 220px;
+  word-wrap: break-word;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+
+    letter-spacing: 0.8px;
+    max-width: 220px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+
+    letter-spacing: 0.9px;
+    max-width: 350px;
+  }
+}
